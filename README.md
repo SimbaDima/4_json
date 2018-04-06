@@ -4,23 +4,23 @@
 
 # Как использовать
 
-При помощи функции `load_data(filepath)`, в аргументе которой лежит путь к файлу, мы выгружаем данные из файла в формате JSON, и копируем их в **data**
+При помощи функции `load_data_from_file(filepath)`, в аргументе которой лежит путь к файлу, мы выгружаем данные из файла в формате JSON, и копируем их в ** data_load_from_file**
 ```
-data = json.load(myFile)
-return data
+data_load_from_file = json.load(my_file)
+return data_load_from_file
 ```
-Эта функция возвратит **data** в которой находятся данные файла.
+Эта функция возвратит ** data_load_from_file** в которой находятся данные файла.
 
-Затем **data** подается на функцию pretty_print_json(data), которая выводит данные в консоль в формате JSON.
+Затем ** data_load_from_file** подается на функцию pretty_print_json_in_console(data_load_from_file), которая выводит данные в консоль в формате JSON.
 ```
-print(json.dumps(data, indent=4, sort_keys=True, ensure_ascii=False))
+print(json.dumps(data_load_from_file, indent=4, sort_keys=True, ensure_ascii=False))
 ```
 *indent=4* - отступы, *sort_keys=True* - включина сортировка по ключам, ensure_ascii=False - отключино  ascii.
 
 **Пример использования**
 ```
-data1 = load_data("C:\\Users\\User\\PycharmProjects\\firstTask\\jsonFormat.txt")
-pretty_print_json(data1)
+data1 = load_data_from_file("C:\\Users\\User\\PycharmProjects\\firstTask\\jsonFormat.txt")
+pretty_print_json_in_console(data1)
 ```
 
 # Как запустить
