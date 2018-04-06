@@ -4,14 +4,14 @@
 
 # Как использовать
 
-При помощи функции `load_data_from_file(filepath)`, в аргументе которой лежит путь к файлу, мы выгружаем данные из файла в формате JSON, и копируем их в ** data_load_from_file**
+При помощи функции `load_data_from_file(filepath)`, в аргументе которой лежит путь к файлу, мы выгружаем данные из файла в формате JSON, и копируем их в **data_load_from_file**
 ```
 data_load_from_file = json.load(my_file)
 return data_load_from_file
 ```
-Эта функция возвратит ** data_load_from_file** в которой находятся данные файла.
+Эта функция возвратит **data_load_from_file** в которой находятся данные файла.
 
-Затем ** data_load_from_file** подается на функцию pretty_print_json_in_console(data_load_from_file), которая выводит данные в консоль в формате JSON.
+Затем **data_load_from_file** подается на функцию pretty_print_json_in_console(data_load_from_file), которая выводит данные в консоль в формате JSON.
 ```
 print(json.dumps(data_load_from_file, indent=4, sort_keys=True, ensure_ascii=False))
 ```
