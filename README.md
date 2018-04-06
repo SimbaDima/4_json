@@ -1,5 +1,3 @@
-# Prettify JSON
-
 # Вывод в консоль данных в формате JSON
 
 Этот инструмент дает возможность, вывести данные в консоль в формате JSON, изначально эти данные находятся в файле, тоже в формате JSON, чтобы получить данные этого файла, надо ввести путь к этому файлу.
@@ -25,13 +23,9 @@ data1 = load_data("C:\\Users\\User\\PycharmProjects\\firstTask\\jsonFormat.txt")
 pretty_print_json(data1)
 ```
 
+# Как запустить
 
-
-# Quickstart
-
-[TODO]
-
-Example of script launch on Linux, Python 3.5:
+Пример запуска скрипта на **Linux**, **Python 3.5**:
 
 ```bash
 
@@ -40,6 +34,6 @@ $ python pprint_json.py <path to file>
 
 ```
 
-# Project Goals
+# Цели проекта 
 
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+Этот проект написан для образовательных целей. Обучающий курс для web-developers - [DEVMAN.org](https://devman.org)
