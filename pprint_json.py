@@ -1,21 +1,23 @@
 import json
 
 
-def load_data_from_file(file_path):
-
+def loading_data_from_file(file_path):
     try:
-        my_file = open(file_path, "r")
+        with open(file_path) as file_content_JSON:
+            data_from_file = json.load(file_content_JSON)
     except FileNotFoundError:
         return None
-    data_load_from_file = json.load(my_file)
-    my_file.close()
-    return data_load_from_file
+
+    return data_from_file
 
 
-def pretty_print_json_in_console(data_load_from_file):
-    print(json.dumps(data_load_from_file, indent=4, sort_keys=True, ensure_ascii=False))
+def pretty_print_json_in_console(data_from_file):
+    print(json.dumps(data_from_file, indent=4, sort_keys=True, ensure_ascii=False))
 
 
-if __name__ == '__main__':
-    data1 = load_data_from_file("C:\\Users\\User\\PycharmProjects\\firstTask\\jsonFormat.txt")
-    pretty_print_json_in_console(data1)
+if __name__ == "__main__":
+    print("enter path to file:")
+    file_path_user = input()
+    data_file_user = loading_data_from_file(file_path_user)
+    pretty_print_json_in_console(data_file_user)
+
