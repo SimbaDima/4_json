@@ -6,7 +6,7 @@
 
 При помощи функции `loading_data_from_file(file_path)`, в аргументе которой лежит путь к файлу, мы выгружаем данные из файла в формате JSON, и копируем их в **data_from_file**
 ```python 
-data_from_file = json.load(file_content_JSON)
+data_from_file = json.load(file_content_json)
 return data_from_file
 ```
 Эта функция возвратит **data_from_file** в которой находятся данные файла, если файл существует, в противном случае возвратится `None`  
