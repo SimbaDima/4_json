@@ -28,17 +28,7 @@ file_path_user = input()
 data_file_user = loading_data_from_file(file_path_user)
 pretty_print_json_in_console(data_file_user)
 ```
-После выполнения скрипта, в консоль выведет данные тожу в формате JSON:
-[
-    {
-        "level": "5",
-        "name": "Dima"
-    },
-    {
-        "level": "3",
-        "name": "Ivan"
-    }
-]
+После выполнения скрипта, в консоль выведет данные тожу в формате JSON.
 
 
 # Как запустить
