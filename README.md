@@ -9,9 +9,9 @@
 data_from_file = json.load(file_content_JSON)
 return data_from_file
 ```
-Эта функция возвратит **data_from_file** в которой находятся данные файла, если файл существует, в противном случае возвратится `return None`  
+Эта функция возвратит **data_from_file** в которой находятся данные файла, если файл существует, в противном случае возвратится `None`  
 
-Затем **data_from_file** подается на функцию pretty_print_json_in_console(data_from_file), которая выводит данные в консоль в формате JSON.
+Затем **data_from_file** подается на функцию `pretty_print_json_in_console(data_from_file)`, которая выводит данные в консоль в формате JSON.
 ```python
 print(json.dumps(data_from_file, indent=4, sort_keys=True, ensure_ascii=False))
 ```
