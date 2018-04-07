@@ -3,8 +3,8 @@ import json
 
 def loading_data_from_file(file_path):
     try:
-        with open(file_path) as file_content_JSON:
-            data_from_file = json.load(file_content_JSON)
+        with open(file_path) as file_content_json:
+            data_from_file = json.load(file_content_json)
     except FileNotFoundError:
         return None
 
@@ -20,4 +20,3 @@ if __name__ == "__main__":
     file_path_user = input()
     data_file_user = loading_data_from_file(file_path_user)
     pretty_print_json_in_console(data_file_user)
-
