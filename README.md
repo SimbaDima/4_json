@@ -4,24 +4,42 @@
 
 # Как использовать
 
-При помощи функции `load_data_from_file(filepath)`, в аргументе которой лежит путь к файлу, мы выгружаем данные из файла в формате JSON, и копируем их в **data_load_from_file**
+При помощи функции `loading_data_from_file(file_path)`, в аргументе которой лежит путь к файлу, мы выгружаем данные из файла в формате JSON, и копируем их в **data_from_file**
 ```python 
-data_load_from_file = json.load(my_file)
-return data_load_from_file
+data_from_file = json.load(file_content_JSON)
+return data_from_file
 ```
-Эта функция возвратит **data_load_from_file** в которой находятся данные файла.
+Эта функция возвратит **data_from_file** в которой находятся данные файла, если файл существует, в противном случае возвратится `return None`  
 
-Затем **data_load_from_file** подается на функцию pretty_print_json_in_console(data_load_from_file), которая выводит данные в консоль в формате JSON.
+Затем **data_from_file** подается на функцию pretty_print_json_in_console(data_from_file), которая выводит данные в консоль в формате JSON.
 ```python
-print(json.dumps(data_load_from_file, indent=4, sort_keys=True, ensure_ascii=False))
+print(json.dumps(data_from_file, indent=4, sort_keys=True, ensure_ascii=False))
 ```
 *indent=4* - отступы, *sort_keys=True* - включина сортировка по ключам, ensure_ascii=False - отключино  ascii.
 
 **Пример использования**
+Пользователя в консоли должен будет ввести путь к файлу
 ```python
-data1 = load_data_from_file("C:\\Users\\User\\PycharmProjects\\firstTask\\jsonFormat.txt")
-pretty_print_json_in_console(data1)
+print("enter path to file:")
+file_path_user = input()
+```    
+Пусть пользователь ввел путь к файлу: C:\Users\User\PycharmProjects\firstTask\jsonFormat.txt. В jsonFormat.txt лежат данные в формате JSON: [{"name": "Dima", "level": "5"},{"name": "Ivan","level": "3"}]. 
+```python 
+data_file_user = loading_data_from_file(file_path_user)
+pretty_print_json_in_console(data_file_user)
 ```
+После выполнения скрипта, в консоль выведет данные тожу в формате JSON:
+[
+    {
+        "level": "5",
+        "name": "Dima"
+    },
+    {
+        "level": "3",
+        "name": "Ivan"
+    }
+]
+
 
 # Как запустить
 
