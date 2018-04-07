@@ -12,13 +12,13 @@ return data_load_from_file
 Эта функция возвратит **data_load_from_file** в которой находятся данные файла.
 
 Затем **data_load_from_file** подается на функцию pretty_print_json_in_console(data_load_from_file), которая выводит данные в консоль в формате JSON.
-```
+```python
 print(json.dumps(data_load_from_file, indent=4, sort_keys=True, ensure_ascii=False))
 ```
 *indent=4* - отступы, *sort_keys=True* - включина сортировка по ключам, ensure_ascii=False - отключино  ascii.
 
 **Пример использования**
-```
+```python
 data1 = load_data_from_file("C:\\Users\\User\\PycharmProjects\\firstTask\\jsonFormat.txt")
 pretty_print_json_in_console(data1)
 ```
