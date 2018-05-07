@@ -4,7 +4,7 @@ The script allows you to read data from a file (*data in the **JSON** format*) (
 
 # How to use
 
-Using the `load_data_from_file (file_path)` function, whose argument is the path to the file, we upload the data from the file in **JSON **format, and copy them to `data_from_file`
+Using the `load_data_from_file (file_path)` function, whose argument is the path to the file, we upload the data from the file in **JSON** format, and copy them to `data_from_file`
 ```python
 data_from_file = json.load (file_content_json)
 return data_from_file
