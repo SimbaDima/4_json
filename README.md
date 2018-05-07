@@ -15,7 +15,6 @@ return data_from_file
 ```python
 print(json.dumps(data_from_file, indent=4, sort_keys=True, ensure_ascii=False))
 ```
-`indent=4` - отступы, `sort_keys=True` - включина сортировка по ключам, `ensure_ascii=False` - отключино  **ascii**.
 
 **Пример использования**
 Пользователя в консоли должен будет ввести путь к файлу
