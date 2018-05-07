@@ -23,7 +23,7 @@ print(json.dumps(data_from_file, indent=4, sort_keys=True, ensure_ascii=False))
 print("enter path to file:")
 file_path_user = input()
 ```    
-Пусть пользователь ввел путь к файлу: *C:\Users\User\PycharmProjects\firstTask\jsonFormat.txt*. В файле *jsonFormat.txt* лежат данные в формате **JSON**: *[{"name": "Dima", "level": "5"},{"name": "Ivan","level": "3"}]*. 
+
 ```python 
 data_file_user = loading_data_from_file(file_path_user)
 pretty_print_json_in_console(data_file_user)
