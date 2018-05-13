@@ -19,6 +19,16 @@ Then `data_of_file` is supplied to the function `pretty_print_json (data_of_file
 print (json.dumps (data_from_file, indent = 4, sort_keys = True, ensure_ascii = False))
 
 ```
+In the following lines
+
+```python
+
+data_file_user = loading_data_from_file(sys.argv[1])
+pretty_print_json(data_file_user)
+
+```
+we use our functions, `sys.argv[1]` - with these argument, we pass the file name through the console.
+
 
 # How to start
 
@@ -31,38 +41,16 @@ Example of running the script on **cmd of Windows**, **Python 3.5**:
 ```
 
 # Example of use
-Консоль позволяет использовать автодополнение, что очень удобно, для начало нам надо перейти в директорию, где находится наш скрипт и файл с данными, затем смотрим в пункт, как использовать и прописуем себе это в консоль 
+
+The console allows you to use autocompletion, which is very convenient, to start we need to go to the directory where our script and the data file are located, then look at the point how to start and spell this into the console
 
 ```bash
 >cd C:/Users/User/PycharmProjects/firstTask
 > python pprint_json.py dataJson.txt
 
 ```
-В файле dataJson.txt находятся данные: *[{"name": "Dima", "level": "5"},{"name": "Ivan","level": "3"}]*
-После использования скрипта они становятся более удобные для работы:
-[
-    {
-        "level": "5",
-        "name": "Dima"
-    },
-    {
-        "level": "3",
-        "name": "Ivan"
-    }
-]
-
-
-
-Let the user enter the path to the file: *C: \ Users \ User \ PycharmProjects \ firstTask \ jsonFormat.txt*. The file *jsonFormat.txt* contains data in the format **JSON**: *[{"name": "Dima", "level": "5"}, {"name": "Ivan", "level": "3"}]*.
-
-```python
-
-data_file_user = loading_data_from_file(sys.argv[1])
-pretty_print_json(data_file_user)
-
-```
-After executing the script, the console will display the data in the **JSON** format, only in an easy-to-read form (with indentations, spaces, sorting by keys)
-
+The dataJson.txt file contains data: *[{"name": "Dima", "level": "5"},{"name": "Ivan","level": "3"}]*
+After you run the script, you will see that they have become more user-friendly
 
 # Project Objectives
 
