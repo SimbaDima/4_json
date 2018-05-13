@@ -5,15 +5,15 @@ import sys
 def loading_data_from_file(file_path_of_user):
     try:
         with open(file_path_of_user) as object_of_file:
-            data_format_json = json.load(object_of_file)
+            data_of_file = json.load(object_of_file)
     except FileNotFoundError:
         return None
 
-    return data_format_json
+    return data_of_file
 
 
-def pretty_print_json(data_format_json):
-    print(json.dumps(data_format_json, indent=4, sort_keys=True, ensure_ascii=False))
+def pretty_print_json(data_of_file):
+    print(json.dumps(data_of_file, indent=4, sort_keys=True, ensure_ascii=False))
 
 
 if __name__ == "__main__":
