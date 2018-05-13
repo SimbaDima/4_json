@@ -1,4 +1,5 @@
 import json
+import sys
 
 
 def loading_data_from_file(file_path_of_user):
@@ -16,7 +17,5 @@ def pretty_print_json(data_format_json):
 
 
 if __name__ == "__main__":
-    print("enter path to file:")
-    file_path_user = input()
-    data_file_user = loading_data_from_file(file_path_user)
+    data_file_user = loading_data_from_file(sys.argv[1])
     pretty_print_json(data_file_user)
