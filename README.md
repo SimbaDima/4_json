@@ -52,14 +52,7 @@ The console allows you to use autocompletion, which is very convenient, to start
 ```
 The dataJson.txt file contains data: *[{"name": "Dima", "level": "5"},{"name": "Ivan","level": "3"}]*
 After you run the script, you will see
-  {
-          "level": "5",
-          "name": "Dima"
-      },  
-      {
-          "level": "3",
-          "name": "Ivan"
-  }
+![image](https://mail.yandex.ru/message_part/json1.PNG?_uid=350316337&hid=1.1&ids=165507286305869429&name=json1.PNG)
 
 # Project Objectives
 
