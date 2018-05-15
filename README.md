@@ -1,6 +1,6 @@
 # Outputting data from a file to the console in JSON format
 
-The script allows you to read data from a file (*data in the **JSON** format*) (*the script will ask for the path to the file*), and print them to the console in the format **JSON** (*in an easy-to-read form with indents, hyphenation, spaces*).
+The script allows you to read data from a file (*data in the **JSON** format*), and print them to the console in the format **JSON** (*in an easy-to-read form with indents, hyphenation, spaces*).
 
 # How to use
 
@@ -45,13 +45,24 @@ Example of running the script on **cmd of Windows**, **Python 3.5**:
 The console allows you to use autocompletion, which is very convenient, to start we need to go to the directory where our script and the data file are located, then look at the point how to start and spell this into the console
 
 ```bash
+
 >cd C:/Users/User/PycharmProjects/firstTask
 > python pprint_json.py dataJson.txt
 
 ```
 The dataJson.txt file contains data: *[{"name": "Dima", "level": "5"},{"name": "Ivan","level": "3"}]*
 After you run the script, you will see that they have become more user-friendly
+[
+    {
+        
+        "name": "Dima"
+    },
+    {
+        "level": "3",
+        "name": "Ivan"
+    }
+]
 
 # Project Objectives
 
-This project is written for educational purposes. Training course for web-developers - [DEVMAN.org] (https://devman.org)
+This project is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
