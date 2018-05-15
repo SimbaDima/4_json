@@ -52,8 +52,16 @@ The console allows you to use autocompletion, which is very convenient, to start
 ```
 The dataJson.txt file contains data: *[{"name": "Dima", "level": "5"},{"name": "Ivan","level": "3"}]*
 After you run the script, you will see
-![Show console](C:\Users\User\PycharmProjects\firstTask\json1.PNG)
 
+{
+        "level": "5",
+        "name": "Dima"
+    },
+    {
+        "level": "3",
+        "name": "Ivan"
+ }
+ 
 # Project Objectives
 
 This project is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
