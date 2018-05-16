@@ -4,16 +4,16 @@ The script allows you to read data from a file (*data in the **JSON** format*), 
 
 # How to use
 
-Using the `loading_data_from_file(file_path_of_user)` function, whose argument is the path to the file, we upload the data from the file in **JSON** format, and copy them to `data_of_file`
+Using the `load_data_from_file(file_path_of_user)` function, whose argument is the path to the file, we upload the data from the file in **JSON** format, and copy them to `data_from_file`
 ```python
 
-data_of_file = json.load(object_of_file)
+data_from_file = json.load(object_of_file)
 return data_of_file
 
 ```
-This function will return `data_of_file` in which the file data is located, if the file exists, otherwise `None`
+This function will return `data_from_file` in which the file data is located, if the file exists, otherwise `None`
 
-Then `data_of_file` is supplied to the function `pretty_print_json (data_of_file)`, which prints data to the console in **JSON** format.
+Then `data_of_file` is supplied to the function `pretty_print_json (data_from_file)`, which prints data to the console in **JSON** format.
 ```python
 
 print (json.dumps (data_from_file, indent = 4, sort_keys = True, ensure_ascii = False))
@@ -23,7 +23,7 @@ In the following lines
 
 ```python
 
-data_file_user = loading_data_from_file(sys.argv[1])
+data_file_user = load_data_from_file(sys.argv[1])
 pretty_print_json(data_file_user)
 
 ```
