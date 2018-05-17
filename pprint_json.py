@@ -21,7 +21,5 @@ if __name__ == "__main__":
         pretty_print_json(data_file_user)
     except FileNotFoundError:
         print("file does not exist with that name")
-    except TypeError:
-        print("missing required parameter in function <load_data_from_file>")
     except IndexError:
         print("after name of script will be file c data in format json ")
